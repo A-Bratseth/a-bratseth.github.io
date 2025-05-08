@@ -1,0 +1,96 @@
+/* Reset and base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a url('media/abstract-black-sand-waves-background_1235831-38323_02.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    color: #333;
+  }
+  
+  
+  .content {
+    margin-top: 90px; /* Adjust based on navbar height */
+  }
+  
+  
+  footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+  }
+  
+
+
+/* Nav container spacing */
+.navbar-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    pointer-events: auto;
+  }
+  
+  .navbar {
+    background-color: #F5F5F5;
+    border-radius: 2rem;
+    padding: 0.8rem 2rem;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  color: #cc00ff;
+  font-size: 1.3rem;
+  text-transform: lowercase;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #cc00ff;
+}
+
+/* Right-aligned icons */
+.nav-icons a {
+  margin-left: 1rem;
+}
+
+.nav-icons img {
+  width: 20px;
+  height: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.nav-icons img:hover {
+  filter: none;
+}
