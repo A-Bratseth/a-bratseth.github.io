@@ -3,12 +3,11 @@
 
 /* About section */
 #about {
-    padding: 4rem 2rem;
+    padding: 2rem 6rem;
     min-height: 100vh; /* Fills the full screen height */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically centers the content */
-    padding: 2rem; /* Adjust as needed */
   }
   
   .about-container {
@@ -42,6 +41,8 @@
     padding: 0 1rem;
     max-width: 700px;
     color: #fff;
+    font-family: 'Georgia', serif;
+    font-size: 0.8rem;
   }
   
   .byline {
@@ -78,10 +79,10 @@
   .social-button:hover {
     background-color: #f0f0f0;
   }
-  
+  /*
   .about-right .image-placeholder {
     border: 2px solid black;
-    height: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,8 +90,27 @@
     font-style: italic;
     background-color: #ffffffa1;
     object-fit: cover;
-  }
+  } */
   
+.about-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px; /* Optional: limits image size */
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Optional: rounds corners */
+  object-fit: cover; /* keeps aspect ratio inside box */
+}
+
+
 
 
 

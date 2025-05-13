@@ -39,8 +39,26 @@
           <span>last updated: 09/05/2025</span>
         </div>
       </section>
-      
 
+    <section class="project-details">
+      <div class="content-wrapper">
+        <div class="text-block">
+          <h2 id="project-title">Project Title</h2>
+          <p id="project-description">Description goes here...</p>
+          <ul class="bullet-list">
+            <li>Key feature or insight</li>
+            <li>Technology used</li>
+            <li>Outcome or metric</li>
+            <li>Other detail</li>
+          </ul>
+        </div>
+        <div class="image-block">
+          <div class="image-frame">
+            <img id="project-image" src="your-image.jpg" alt="Project Image">
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -63,7 +81,7 @@
           <div class="project-content">
             <span class="project-index">01</span>
             <h3 class="project-title">Custom 8-bit CPU</h3>
-            <a class="project-link" href="#">DETAILS</a>
+            <button class="get-detail" onclick="changeContent(1)">DETAILS</button>
           </div>
           <hr />
         </div>
@@ -72,7 +90,7 @@
             <div class="project-content">
               <span class="project-index">02</span>
               <h3 class="project-title">Investment Thesis: DNUT US</h3>
-              <a class="project-link" href="#">DETAILS</a>
+              <button class="get-detail" onclick="changeContent(2)">DETAILS</button>
             </div>
             <hr />
           </div>
@@ -118,5 +136,6 @@
   <footer>
     <p>&copy; 2025 Adrian Bratseth</p>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
