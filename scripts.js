@@ -87,11 +87,11 @@ function changeContent(index) {
 // collapses/expands -> makes collaps button visible
   if (currentIndex === index) {
     // Same content clicked → collapse
-    document.querySelector('.content-wrapper').classList.remove('expanded');
+    document.querySelector('.project-wrapper').classList.remove('expanded');
     currentIndex = null;
     return;
   }
-  document.querySelector('.content-wrapper').classList.add('expanded');
+  document.querySelector('.project-wrapper').classList.add('expanded');
   document.querySelector('.collapse-btn').classList.add('visible');
   currentIndex = index;
 
@@ -104,7 +104,7 @@ function changeContent(index) {
 
 
 document.querySelector('.collapse-btn').addEventListener('click', () => {
-  document.querySelector('.content-wrapper').classList.remove('expanded');
+  document.querySelector('.project-wrapper').classList.remove('expanded');
   currentIndex = null;
   document.querySelector('.collapse-btn').classList.remove('visible'); // Hide it again
 });

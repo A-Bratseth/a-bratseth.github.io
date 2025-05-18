@@ -1,54 +1,113 @@
-/* Reset and base styles */
+/* === General styling === */
+:root {
+  /* spacing */
+  --spacing-small: 1rem;
+  --spacing-medium: 2rem;
+  --spacing-large: 4rem;
+
+  /* Font families */
+  --font-primary: "Sora", sans-serif;
+  --font-secondary: "Georgia", serif;
+
+  /* Base sizes */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2rem;
+  --font-3xl: 3rem;
+
+  /* Line heights */
+  --line-tight: 1.2;
+  --line-normal: 1.5;
+  --line-loose: 1.75;
+
+  /* font weight */
+  --font-weight-normal: 400;
+  --font-weight-light: 100;
+  --font-weight-bold: 700;
+}
+
+/* === Type defaults === */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #1a1a1a url('media/abstract-black-sand-waves-background_1235831-38323_02.jpg') no-repeat center center fixed; 
-    background-size: cover;
-    color: #333;
+  font-family: var(--font-primary);
+  font-size: var(--font-base);
+  line-height: var(--line-normal);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background: #1a1a1a url('media/abstract-black-sand-waves-background_1235831-38323_02.jpg') no-repeat center center fixed; 
+  background-size: cover;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-tight);
+  margin: 0 0 1rem 0;
+}
+
+h1 { font-size: var(--font-3xl); }
+h2 { font-size: var(--font-2xl); text-align: center;}
+h3 { font-size: var(--font-xl); }
+h4 { font-size: var(--font-lg); }
+p {
+  font-size: var(--font-base);
+  margin-bottom: 1rem;
+  line-height: var(--line-normal);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+  
+
+/* === conent organization === */
+.content {
+    margin-top: 120px; /* Adjust based on navbar height */
+    margin-bottom: var(--spacing-large);
   }
   
-  
-  .content {
-    margin-top: 90px; /* Adjust based on navbar height */
-  }
-  
-  
-  footer {
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px;
-  }
+.section-wrapper {
+  max-width: 80vw;
+  margin: 0 auto;
+  /* padding: 2rem 1rem; */
+  margin-bottom: var(--spacing-large);
+}
+
+
+
   
 
 
-/* Nav container spacing */
-.navbar-container {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    pointer-events: auto;
-  }
-  
-  .navbar {
-    background-color: #F5F5F5;
-    border-radius: 2rem;
-    padding: 0.8rem 2rem;
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  }
+/* === Navigation bar === */
+.navbar-wrapper {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.navbar {
+  background-color: #F5F5F5;
+  border-radius: 2rem;
+  padding: 0.8rem 2rem;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
   
 
 /* Logo */
@@ -93,4 +152,11 @@ body {
 
 .nav-icons img:hover {
   filter: none;
+}
+
+/* === footer === */
+footer p {
+  color: white;
+  text-align: center;
+  font-size: var(--font-sm);
 }
