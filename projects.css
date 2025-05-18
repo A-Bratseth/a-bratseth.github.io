@@ -1,11 +1,4 @@
-.mywork-top {
-    padding: 2rem;
-    color: #ffffff;
-    font-family: 'Georgia', serif;
-    position: relative;
-  }
-  
-  /* Header with line */
+/* === my header === */
   .mywork-header {
     display: flex;
     justify-content: space-between;
@@ -13,23 +6,15 @@
     border-top: 3px solid #333;
     border-bottom: 3px solid #333;
     padding: 0 4rem;
-    font-size: 2.5rem;
   }
   
   .mywork-header h1 {
-    margin: 0;
+    margin-bottom: 0;
   }
 
 
-
-
-  
-/* project details section */
-.project-details {
-  width: 100%;
-}
-
-.content-wrapper {
+/* === Project details === */
+.project-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +28,7 @@
   transition: max-height 0.6s ease, opacity 0.4s ease;  
 }
 
-.content-wrapper.expanded {
+.project-wrapper.expanded {
   max-height: 1000px; /* big enough to fit all content */
   opacity: 1;
 }
@@ -81,23 +66,7 @@
   object-fit: cover;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Projects section */
-.projects-section {
-    color: #ccc;
-    padding: 4rem 2rem;
-    font-family: 'Georgia', serif;
-  }
-  
+/* === Projects list === */
   /* Label above the list */
   .projects-label {
     font-size: 1.4rem;

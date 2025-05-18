@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="home.css" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="landing.css" />
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body> 
-  <header class="navbar-container">
+  <header class="navbar-wrapper">
     <nav class="navbar">
         <div class="logo">Adrian Bratseth</div>
         <ul class="nav-links">
@@ -26,26 +27,17 @@
   </header>
 
   <main class="content">
-    <section id="about">
-        <div class="about-container">
+    <section id="about" class="section-wrapper">
+        <h2>About Me</h2>
+        <hr class="title-divider" />
+        <div class="about-wrapper">
           <div class="about-left">
-            <h1 class="name">About Me</h1>
-              <div class="text-group">
-                <div class="text-block">
+              <div class="about-text">
                 <p>Originally from Trondheim, Norway, Adrian began his professional journey in creative storytelling—producing advertising films for local businesses. This early passion for visual communication culminated in a documentary film, that was featured at the kosmorama Film Festival in 2018, marking a proud milestone in his creative pursuits.</p>
                 <p>Eager to broaden his horizons, Adrian moved to Singapore in 2019 to pursue a Bachelor's degree in International Business. It didn’t take long for him to gravitate toward a specialization in banking and finance, where he discovered a deep interest in the mechanics of global markets.</p>
                 <p>This growing fascination led him to Ireland in 2022, where he joined Bloomberg LP as a quantitative data processor. There, he contributed to the delivery of accurate and timely corporate financial information to investors worldwide via the Bloomberg Terminal—one of the most influential tools in modern finance.</p>
                 <p>In 2024, driven by a desire to deepen his understanding of the international business landscape, Adrian founded a series of 2 companies in Germany. In these ventures, he has worn multiple hats, working as a financial controller, FP&A analyst, and marketing and sales coordinator. These diverse roles have given him hands-on insight into both the strategic and operational sides of business, further fueling his ambition to play a meaningful role in shaping economic decision-making.</p>
-                </div>
-                <div class="byline">
-                <p></p>
-                </div>
               </div>
-            <div class="social-links">
-              <h2>Connect</h2>
-              <a href="#" class="social-button">adrian.bratseth@gmail.com</a>
-              <a href="#" class="social-button">phone number: +47 910 01 209</a>
-            </div>
           </div>
       
           <div class="about-right">
@@ -55,123 +47,116 @@
     </section>
       
 
-    <section class="skills-section">
+    <section id="skill" class="section-wrapper">
         <h2>Key Skills</h2>
-        <hr class="skills-divider" />
-        <div class="skills-wrapper">
+        <hr class="title-divider" />
+        <div class="skill-wrapper">
           <div class="skill-item">
-            <div class="skill-left">
               <div class="skill-icon"> <img src="media/icons/report.png" alt="Programming" /></div>
-              <div class="skill-name">Financial Modeling</div>
-            </div>
-            <div class="skill-right">
+              <h4 class="skill-name">Financial Modeling</h4>
+              <hr class="skill-underline">
               <p class="skill-description">Proficient in Financial Modelling, including WACC calculations and Debt Analysis, with hands-on experience using the Bloomberg Terminal to build data-driven models that support valuation, forecasting, and strategic financial decision-making.</p>
               <p class="skill-tags"><strong>Financial Modelling</strong> &bull; <strong>WACC</strong> &bull; <strong>Debt Analysis</strong> &bull; <strong>Bloomberg Terminal</strong></p>
-            </div>
           </div>
       
           <div class="skill-item">
-            <div class="skill-left">
               <div class="skill-icon"> <img src="media/icons/data.png" alt="Programming" /></div>
-              <div class="skill-name">Programming</div>
-            </div>
-            <div class="skill-right">
+              <h4 class="skill-name">Programming</h4>
+              <hr>
               <p class="skill-description">Skilled in programming with a focus on Python, SQL, R, and VBA, applying these languages to automate workflows, analyze complex datasets, and develop tools for data-driven decision-making in financial and business contexts.</p>
               <p class="skill-tags"><strong>Python</strong> &bull; <strong>SQL</strong> &bull; <strong>R</strong></p>
-            </div>
           </div>
 
           <div class="skill-item">
-            <div class="skill-left">
               <div class="skill-icon"> <img src="media/icons/adobe-creative-cloud-svgrepo-com.svg" alt="Programming" /></div>
-              <div class="skill-name">Creative</div>
-            </div>
-            <div class="skill-right">
+              <h4 class="skill-name">Creative</h4>
+              <hr>
               <p class="skill-description">Creative professional with experience using Premiere Pro, Lightroom, and InDesign to produce compelling visual content and brand storytelling.</p>
               <p class="skill-tags"><strong>Premier Pro</strong> &bull; <strong>Lightroom</strong> &bull; <strong>InDesign</strong></p>
-            </div>
           </div>
 
         </div>
       </section>
 
-    <section>
-      <section id="experience">
-        <h2 class="section-title">History</h2>
-        <div class="experience-grid">
-            <div class="experience-pair">
-              <div class="experience-entry">
-                <div class="role">Founder / CFO</div>
-                <div class="company">Cybele AG</div>
+
+      <section id="experience" class="section-wrapper">
+        <h2>History</h2>
+        <hr class="title-divider" />
+
+        <h4>professional experience</h4>
+        <hr class="experience-divider" />        
+        <div class="experience-wrapper">
+            <div class="experience-entry">
+              <div class="experience-left">
+                <div class="experience-role">Founder / CFO</div>
+                <div class="experience-company">Cybele AG</div>
               </div>
-              <div class="experience-entry">
-                <div class="dates">February 2024 – Present</div>
-                <div class="description">Coordinate drafting of founding documents, outlining terms on ownership structure, vesting periods and quorum requirements.   
+              <div class="experience-right">
+                <div class="experience-dates">February 2024 – Present</div>
+                <div class="experience-description">Coordinate drafting of founding documents, outlining terms on ownership structure, vesting periods and quorum requirements.   
                                         Develop policies and procedures for a complete accounting cycle. From charter of accounts, to trial balances, to running 
                                         income and balance sheet, to publication of quarterly reports to the Board, supervisors and regulators. </div>
               </div>
             </div>
-          
-            <div class="experience-pair">
-              <div class="experience-entry">
-                <div class="role">Senior Financial Analyst</div>
-                <div class="company">Bloomberg L.P.</div>
+            <div class="experience-entry">
+              <div class="experience-left">
+                <div class="experience-role">Senior Financial Analyst</div>
+                <div class="experience-company">Bloomberg L.P.</div>
               </div>
-              <div class="experience-entry">
-                <div class="dates">October 2022 – December 2024</div>
-                <div class="description">Analyse corporate financial publications and report them to investors through the Bloomberg terminal. Where I processed over 900 individual company publications.</div>
+              <div class="experience-right">
+                <div class="experience-dates">October 2022 – December 2024</div>
+                <div class="experience-description">Analyse corporate financial publications and report them to investors through the Bloomberg terminal. Where I processed over 900 individual company publications.</div>
               </div>
             </div>
-
-            <div class="experience-pair">
-                <div class="experience-entry">
-                  <div class="role">Finance Intern</div>
-                  <div class="company">Eurovision EVO Pte. Ltd.</div>
+            <div class="experience-entry">
+                <div class="experience-left">
+                  <div class="experience-role">Finance Intern</div>
+                  <div class="experience-company">Eurovision EVO Pte. Ltd.</div>
                 </div>
-                <div class="experience-entry">
-                  <div class="dates">November 2021 – April 2022</div>
-                  <div class="description">Develop internal policies ensuring compliance with Singapore’s Personal Data Protection act 2012 (PDPA) and the 
+                <div class="experience-right">
+                  <div class="experience-dates">November 2021 – April 2022</div>
+                  <div class="experience-description">Develop internal policies ensuring compliance with Singapore’s Personal Data Protection act 2012 (PDPA) and the 
                     EU’s General Data Protection Regulation (GDPR).</div>
                 </div>
               </div>
-
-              <div class="experience-pair">
-                <div class="experience-entry">
-                  <div class="role">Assembler</div>
-                  <div class="company">Relokator AS</div>
+              <div class="experience-entry">
+                <div class="experience-left">
+                  <div class="experience-role">Assembler</div>
+                  <div class="experience-company">Relokator AS</div>
                 </div>
-                <div class="experience-entry">
-                  <div class="dates">June 2019 – November 2019</div>
-                  <div class="description">Assemble/disassemble various office equipment and coordinate interior design and layout together with customer.  </div>
+                <div class="experience-right">
+                  <div class="experience-dates">June 2019 – November 2019</div>
+                  <div class="experience-description">Assemble/disassemble various office equipment and coordinate interior design and layout together with customer.  </div>
                 </div>
               </div>
         </div>
 
-        <h2 class="section-title">Education</h2>
-        <div class="experience-grid">
-            <div class="experience-pair">
-              <div class="experience-entry">
-                <div class="company">James Cook University</div>
+        <h4>Education</h4>
+        <hr class="experience-divider" />
+        <div class="experience-wrapper">
+            <div class="experience-entry">
+              <div class="experience-left">
+                <div class="experience-company">James Cook University</div>
               </div>
-              <div class="experience-entry">
-                <div class="dates">November 2019 – March 2022</div>
-                <div class="description"> Dobble majored in "banking & Finance" and "International Business"</div>
+              <div class="experience-right">
+                <div class="experience-dates">November 2019 – March 2022</div>
+                <div class="experience-description"> Dobble majored in "banking & Finance" and "International Business"</div>
               </div>
             </div>
-            <div class="experience-pair">
-              <div class="experience-entry">
-                <div class="company">Tiller Videregående Skole</div>
+            <div class="experience-entry">
+              <div class="experience-left">
+                <div class="experience-company">Tiller Videregående Skole</div>
               </div>
-              <div class="experience-entry">
-                <div class="dates">August 2016 – June 2019</div>
-                <div class="description">Diploma in "Media & Communicsation" where i learned Journalism, Film, Photography and Graphic design.</div>
+              <div class="experience-right">
+                <div class="experience-dates">August 2016 – June 2019</div>
+                <div class="experience-description">Diploma in "Media & Communicsation" where i learned Journalism, Film, Photography and Graphic design.</div>
               </div>
             </div>
         </div>  
       </section>
-    </section>
 
-    <section id="url-splash">
+
+    <section id="url-splash" class="section-wrapper">
         <h2 class="url-text">www.a-bratseth.github.io</h2>
     </section>
       

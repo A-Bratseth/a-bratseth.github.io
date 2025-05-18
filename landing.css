@@ -1,87 +1,21 @@
 /* === Utility Layout Styles === */
-.section-wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+
+
+.title-divider {
+  margin-bottom: var(--spacing-large);
+  border-top: 2px solid #ffffff;
 }
-
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-
-.section-spacing {
-  margin-top: 4rem;
-}
-
-:root {
-  --spacing-small: 1rem;
-  --spacing-medium: 2rem;
-  --spacing-large: 4rem;
-
-    /* Font families */
-  --font-primary: "Sora", sans-serif;
-  --font-secondary: "Georgia", serif;
-
-  /* Base sizes */
-  --font-xs: 0.75rem;
-  --font-sm: 0.875rem;
-  --font-base: 1rem;
-  --font-lg: 1.25rem;
-  --font-xl: 1.5rem;
-  --font-2xl: 2rem;
-  --font-3xl: 3rem;
-
-  /* Line heights */
-  --line-tight: 1.2;
-  --line-normal: 1.5;
-  --line-loose: 1.75;
-}
-
-/* === Type defaults === */
-body {
-  font-family: var(--font-primary);
-  font-size: var(--font-base);
-  line-height: var(--line-normal);
-  color: #fff;
-  margin: 0;
-  padding: 0;
-
-    background: #1a1a1a url('media/abstract-black-sand-waves-background_1235831-38323_02.jpg') no-repeat center center fixed; 
-    background-size: cover;  
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-primary);
-  font-weight: 700;
-  line-height: var(--line-tight);
-  margin: 0 0 1rem 0;
-}
-
-h1 { font-size: var(--font-3xl); }
-h2 { font-size: var(--font-2xl); }
-h3 { font-size: var(--font-xl); }
-h4 { font-size: var(--font-lg); }
-p {
-  font-size: var(--font-base);
-  margin-bottom: 1rem;
-  line-height: var(--line-normal);
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.3s ease;
-}
-
 
 /* === about === */
-.about-container {
+.about-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-large);
   align-items: start;
+}
+
+.about-wrapper h2 {
+  align-items: center;
 }
 
 .about-left {
@@ -89,14 +23,6 @@ a {
   flex-direction: column;
   gap: var(--spacing-medium);
 }
-
-.text-group {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-small);
-}
-
-
 
 .about-img {
   width: 100%;
@@ -114,17 +40,7 @@ a {
 }
 
 /* === skills === */
-.skills-section {
-  background-color: #FFFAFA;
-}
-
-.skills-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: var(--spacing-medium);
-}
-
-.skills-wrapper {
+.skill-wrapper {
   display: flex;
   gap: var(--spacing-medium);
   justify-content: center;
@@ -142,23 +58,26 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: #000;
 }
 
 .skill-icon img {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
   margin-bottom: var(--spacing-small);
 }
 
-.skill-name {
-  font-weight: bold;
+.skill-item hr {
+  width: 60%;
+  border: none;
+  border-top: 2px solid #000;
+  margin-top: 0;
   margin-bottom: var(--spacing-small);
 }
 
 .skill-tags {
-  font-size: 0.9rem;
-  color: #333;
+  margin-top: auto;
 }
 
 @media (max-width: 768px) {
@@ -173,41 +92,49 @@ a {
 }
 
 /* === Experiance === */
-.section-title {
-  color: white;  
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: var(--spacing-large);
-  font-family: 'Georgia', serif;
-}
-
-.experience-grid {
+.experience-wrapper {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-large);
+  gap: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+}
+
+#experience h4 {
+  font-weight: var(--font-weight-light);
+  text-align: center;
+}
+
+.experience-divider {
+  width: 25%;
+  opacity: 75%;
+  margin-top: 0;
+  margin-bottom: var(--spacing-medium);
 }
 
 .experience-entry {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-medium);
+  gap: var(--spacing-large);
+  align-items: start;
 }
 
-.role, .company, .dates, .description {
-  color: #ccc;
-  font-size: 1rem;
+.experience-role, .experience-dates {
+  font-size: var(--font-base);
+  line-height: var(--line-loose);
+  font-weight: var(--font-weight-light);
 }
+
+.experience-company {
+  font-size: var(--font-2xl);
+  line-height: var(--line-tight);
+  font-weight: var(--font-weight-normal);
+}
+
 
 /* === URL === */
 #url-splash {
   background-color: #FFFAFA;
   padding: var(--spacing-large) var(--spacing-medium);
   text-align: center;
-}
-
-.url-text {
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 0.05em;
+  color: #000;
 }
