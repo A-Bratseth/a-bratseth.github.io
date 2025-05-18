@@ -1,6 +1,3 @@
-
-
-
 /* About section */
 #about {
     padding: 2rem 6rem;
@@ -28,6 +25,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
+    
   }
 
   .text-group {
@@ -41,8 +39,8 @@
     padding: 0 1rem;
     max-width: 700px;
     color: #fff;
-    font-family: 'Georgia', serif;
-    font-size: 0.8rem;
+    font-family: "sora", sans-serif;
+    font-size: max(0.95rem, 41%);
   }
   
   .byline {
@@ -79,23 +77,12 @@
   .social-button:hover {
     background-color: #f0f0f0;
   }
-  /*
-  .about-right .image-placeholder {
-    border: 2px solid black;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    font-style: italic;
-    background-color: #ffffffa1;
-    object-fit: cover;
-  } */
-  
+
 .about-right {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 6rem;
 }
 
 .image-placeholder {

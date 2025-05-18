@@ -1,0 +1,213 @@
+/* === Utility Layout Styles === */
+.section-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.section-spacing {
+  margin-top: 4rem;
+}
+
+:root {
+  --spacing-small: 1rem;
+  --spacing-medium: 2rem;
+  --spacing-large: 4rem;
+
+    /* Font families */
+  --font-primary: "Sora", sans-serif;
+  --font-secondary: "Georgia", serif;
+
+  /* Base sizes */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2rem;
+  --font-3xl: 3rem;
+
+  /* Line heights */
+  --line-tight: 1.2;
+  --line-normal: 1.5;
+  --line-loose: 1.75;
+}
+
+/* === Type defaults === */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-base);
+  line-height: var(--line-normal);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+
+    background: #1a1a1a url('media/abstract-black-sand-waves-background_1235831-38323_02.jpg') no-repeat center center fixed; 
+    background-size: cover;  
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: var(--line-tight);
+  margin: 0 0 1rem 0;
+}
+
+h1 { font-size: var(--font-3xl); }
+h2 { font-size: var(--font-2xl); }
+h3 { font-size: var(--font-xl); }
+h4 { font-size: var(--font-lg); }
+p {
+  font-size: var(--font-base);
+  margin-bottom: 1rem;
+  line-height: var(--line-normal);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+
+/* === about === */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-large);
+  align-items: start;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-medium);
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+}
+
+
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* === skills === */
+.skills-section {
+  background-color: #FFFAFA;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: var(--spacing-medium);
+}
+
+.skills-wrapper {
+  display: flex;
+  gap: var(--spacing-medium);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 12px;
+  flex: 1 1 30%;
+  max-width: 300px;
+  padding: var(--spacing-small);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: var(--spacing-small);
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: var(--spacing-small);
+}
+
+.skill-tags {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-item {
+    max-width: 90%;
+  }
+}
+
+/* === Experiance === */
+.section-title {
+  color: white;  
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: var(--spacing-large);
+  font-family: 'Georgia', serif;
+}
+
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-large);
+}
+
+.experience-entry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-medium);
+}
+
+.role, .company, .dates, .description {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* === URL === */
+#url-splash {
+  background-color: #FFFAFA;
+  padding: var(--spacing-large) var(--spacing-medium);
+  text-align: center;
+}
+
+.url-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
