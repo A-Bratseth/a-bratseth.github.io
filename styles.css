@@ -6,8 +6,8 @@
   --spacing-large: 4rem;
 
   /* Font families */
-  --font-primary: "Sora", sans-serif;
-  --font-secondary: "Georgia", serif;
+  --font-primary: "Sora", serif;
+  --font-secondary: "Manrope", sans-serif;
 
   /* Base sizes */
   --font-xs: 0.75rem;
@@ -31,7 +31,7 @@
 
 /* === Type defaults === */
 body {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   font-size: var(--font-base);
   line-height: var(--line-normal);
   color: #fff;
@@ -53,6 +53,7 @@ h2 { font-size: var(--font-2xl); text-align: center;}
 h3 { font-size: var(--font-xl); }
 h4 { font-size: var(--font-lg); }
 p {
+  font-family: var(--font-secondary);
   font-size: var(--font-base);
   margin-bottom: 1rem;
   line-height: var(--line-normal);

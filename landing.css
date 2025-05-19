@@ -1,10 +1,53 @@
 /* === Utility Layout Styles === */
-
-
 .title-divider {
   margin-bottom: var(--spacing-large);
   border-top: 2px solid #ffffff;
 }
+
+/* === intro === */
+#intro {
+  max-width: 600px;
+  padding: 4rem 1rem;
+  text-align: left;
+  margin-left: 33%;
+}
+
+.intro-subtitle, .intro-description{
+  color: #bbb;
+  margin-bottom: var(--spacing-small);
+}
+
+.intro-actions {
+  display: flex;
+  gap: var(--spacing-large);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.intro-action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  border: 1px solid #444;
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.intro-action-button:hover {
+  border-color: #fff;
+  background-color: #222;
+  transform: translateY(-2px);
+}
+
+.intro-action-button i {
+  font-size: 1.2rem;
+}
+
 
 /* === about === */
 .about-wrapper {
@@ -122,12 +165,14 @@
   font-size: var(--font-base);
   line-height: var(--line-loose);
   font-weight: var(--font-weight-light);
+  font-family: var(--font-primary);
 }
 
 .experience-company {
   font-size: var(--font-2xl);
   line-height: var(--line-tight);
   font-weight: var(--font-weight-normal);
+  font-family: var(--font-primary);
 }
 
 
@@ -137,4 +182,5 @@
   padding: var(--spacing-large) var(--spacing-medium);
   text-align: center;
   color: #000;
+  border-radius: var(--spacing-large);
 }
