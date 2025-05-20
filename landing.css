@@ -7,21 +7,45 @@
 /* === intro === */
 #intro {
   max-width: 600px;
-  padding: 4rem 1rem;
+  padding: var(--spacing-medium) var(--spacing-small);
   text-align: left;
   margin-left: 33%;
+  background: #a8a8a81c;
+  border-radius: var(--spacing-medium);
 }
 
-.intro-subtitle, .intro-description{
-  color: #bbb;
+.intro-subtitle{
   margin-bottom: var(--spacing-small);
 }
 
-.intro-actions {
+.intro-description{
+  margin-bottom: var(--spacing-medium);
+}
+
+.intro-contact {
   display: flex;
-  gap: var(--spacing-large);
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.intro-contact-item {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 0;
+  text-align: center;
+}
+
+.intro-contact-item-title {
+  font-weight: var(--font-weight-bold);
+  color: #fff;
+  margin: 0;
+}
+
+.intro-contact-item-sub {
+  font-size: var(--font-sm);
+  color: #aaa;
 }
 
 .intro-action-button {
@@ -33,19 +57,16 @@
   border-radius: 12px;
   width: 48px;
   height: 48px;
-  color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin-bottom: var(--spacing-small);
 }
+
 
 .intro-action-button:hover {
   border-color: #fff;
   background-color: #222;
   transform: translateY(-2px);
-}
-
-.intro-action-button i {
-  font-size: 1.2rem;
 }
 
 
